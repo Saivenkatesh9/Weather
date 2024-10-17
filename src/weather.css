@@ -1,0 +1,75 @@
+/* Reset some default styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container styling */
+.container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Input field styling */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Button styling */
+button {
+  background-color: #2575fc;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #6a11cb;
+}
+
+/* Loading text */
+h2 {
+  color: #fff;
+}
+
+/* Weather info styling */
+#mat h1 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.red {
+  color: #ff4d4d;
+}
+
+/* Add media query for responsiveness */
+@media (max-width: 400px) {
+  .container {
+      width: 90%;
+      padding: 15px;
+  }
+
+  button {
+      width: 100%;
+  }
+}
